@@ -1,6 +1,6 @@
 # Homepage
 
-This is a mirror of my hompage. Feel free to reuse this template.
+This is a mirror of my [hompage](https://mika.sh/). Feel free to reuse this template.
 
 ## Licensing
 
