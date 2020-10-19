@@ -1,0 +1,395 @@
+/* https://colorhunt.co/palette/157400 */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@font-face {
+	font-family: 'Material Icons';
+  	font-style: normal;
+  	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/materialicons/v55/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons {
+	font-family: 'Material Icons' !important; 
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.2em;
+	line-height: 1;
+	letter-spacing: normal;
+	text-transform: none;
+	display: inline-block;
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	-webkit-font-feature-settings: 'liga';
+	-webkit-font-smoothing: antialiased;
+}
+
+html {
+	background-color: white;
+}
+
+body {
+	margin: 0px auto;
+	background: white;
+	color: black;
+	scrollbar-width: thin;
+}
+
+* {
+	font-family: 'Noto Sans', sans-serif !important;
+	font-weight: 400;
+	font-size: calc(min(3vw, 1em));
+}
+
+main * {
+	font-family: 'Noto Serif', serif !important;
+}
+
+a {
+	color: #2677f5;
+	text-decoration: none;
+}
+
+h2 {
+	font-size: 1.75em;
+	margin-top: 1.25em;
+}
+
+h3 {
+	font-weight: 400;
+	font-size: 1.25em;
+	margin-top: 1em;
+}
+
+p {
+	font-size: 1em;
+}
+
+
+header {
+	font-family: 'Raleway', sans-serif !important;
+	display: grid;
+	grid-auto-flow: column;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	background-color: white;
+	box-shadow: 0 0 5px 5px rgba(94, 94, 94, 0.2);
+	font-size: 1em;
+	z-index: 100;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	user-select: none;
+	transition: top 0.3s;
+}
+
+header .header-left {
+	padding-left: 1.4em;
+}
+
+header img {
+	height: 1em;
+	vertical-align: middle;
+	margin-right: 0.5em;
+}
+
+header .title, header .subtitle {
+	font-family: 'Raleway', sans-serif !important;
+	font-weight: 600;
+}
+
+header .subtitle, .subtitle a {
+	font-weight: 400;
+	color: black;
+}
+
+header .title {
+	font-weight: 600;
+}
+
+nav {
+	display: grid;
+	grid-gap: 1.5em;
+	justify-content: right;
+	align-content: center;
+	grid-auto-flow: column;
+	padding-right: 1.4em;
+	vertical-align: middle;
+}
+
+nav span {
+	user-select: none;
+}
+
+nav ul {
+	display: grid;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	grid-auto-flow: column;
+}
+
+nav li {
+	padding-left: 0.75em;
+}
+
+nav a {
+	font-family: 'Raleway', sans-serif !important;
+	text-decoration: none;
+	color: black;
+}
+
+nav a:hover {
+	color: #2677f5;
+}
+
+span#nightmode-icon {
+	font-size: 1.27em;
+	color: #bbb;
+	cursor: pointer;
+}
+
+span#menu-icon {
+	cursor: pointer;
+}
+
+div#menu {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	list-style-type: none;
+	background-color: #fcfcfc;
+	box-shadow: 0 0 2px 2px rgba(120, 120, 120, 0.1);
+	float: right;
+	width: 10em;
+	padding-top: 4em;
+	z-index: 90;
+	text-align: center;
+	text-transform: capitalize;
+	user-select: none;
+	transition: top 0.3s;
+}
+
+div#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+div#menu li {
+	line-height: 2em;	
+	padding-bottom: 1em;
+}
+
+div#menu a {
+	font-family: 'Raleway', sans-serif !important;
+	text-decoration: none;
+	color: black;
+}
+
+div#menu a:hover {
+	color: #2677f5;
+	
+}
+
+section {
+	padding-left: 15vw;
+	padding-right: 15vw;
+}
+
+a.button-link {
+	background-color: #5b96f2; 
+	background-color: #a5a5a5;
+	border-radius: 0.55em;
+	color: white;
+	padding: 0.55em;
+	font-family: 'Noto Sans', sans !important;
+	font-size: 0.55em;
+	font-weight: 700;
+	text-transform: lowercase;
+	margin-right: 1ex;
+	vertical-align: middle;
+}
+
+a.button-link:hover {
+	background-color: #5b96f2; 
+}
+
+p.gallery {
+	margin-top: 1em;
+}
+
+p.gallery img {
+	padding: 0px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	height: 10em;
+	image-rendering: -webkit-optimize-contrast;
+	max-width: calc(100vw - 30vw);
+}
+
+p.gallery img:hover {
+	box-shadow: 0 0 5px 1px rgba(94, 94, 94, 0.2);
+}
+
+footer {
+	margin-top: 5em;
+	padding-top: 0.5vh;
+	padding-left: 15vw;
+	padding-right: 15vw;
+	padding-bottom: 1vh;
+	background: #f9f9f9;
+	color: #6d6d6d;
+	font-size: 0.7em;
+	box-shadow: 0 0 10px 1px rgba(94, 94, 94, 0.2);
+}
+
+footer * {
+	font-weight: 300;
+}
+
+footer h2 {
+	font-weight: 700;
+	font-size: 1em;
+}
+
+footer p {
+	font-weight: 200;
+}
+
+section.person {
+	padding-top: 6em;
+	padding-bottom: 2em;
+	text-align: center;
+	background-color: #f6f6f6;
+	background-color: #f9f9f9;
+	box-shadow: 0 0 10px 1px rgba(94, 94, 94, 0.2);
+	display:grid;
+}
+
+@media only screen and (max-width: 1300px) {
+	section.person {
+		grid-template-rows: auto auto;
+	}
+
+	#overview {
+		grid-row-start: 1;
+		grid-row-end: 2;
+
+	}
+
+	#highlights {
+		margin-top: 1em;
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+
+	ul#header-links {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 1301px) {
+	section.person {
+		grid-template-columns: auto auto;
+	}
+
+	#overview {
+		grid-column-start: 1;
+		grid-column-end: 2;
+
+	}
+
+	#highlights {
+		grid-column-start: 2;
+		grid-column-end: 3;
+	}
+
+	span#menu-icon {
+		display: none;
+	}
+}
+
+#personalfooter {
+	margin-top: 2em;
+	font-size: 0.75em;
+}
+
+section.person h1 {
+	font-size: 1.7em;
+}
+
+section.person h2 {
+	margin-top: 1.5em;
+	font-size: 1.5em;
+}
+
+section.person li, ul {
+	margin: 0;
+	padding: 0;
+}
+
+
+section.person img#profile {
+	border-radius: 50%;
+	width: 15em;
+	box-shadow: 0 0 10px 1px rgba(94, 94, 94, 0.2);
+}
+
+section.person hr {
+	width: 25vw;
+	border-top: 1px solid #999;
+}
+
+#social-icons {
+	margin-top: 1.5em;
+}
+
+#social-icons img {
+	height: 2em;
+	margin-right: 1ex;
+	filter: invert(33%) sepia(0%) saturate(88%) hue-rotate(170deg) brightness(96%) contrast(93%);
+}
+
+/* https://codepen.io/sosuke/pen/Pjoqqp */
+.github-filter:hover {
+	filter: invert(5%) sepia(16%) saturate(143%) hue-rotate(314deg) brightness(93%) contrast(91%) !important;
+}
+
+.rg-filter:hover {
+	filter: invert(69%) sepia(70%) saturate(2807%) hue-rotate(128deg) brightness(92%) contrast(102%) !important;
+}
+
+.gmail-filter:hover {
+	filter: invert(34%) sepia(93%) saturate(2562%) hue-rotate(345deg) brightness(89%) contrast(81%) !important;
+}
+
+.slack-filter:hover {
+	filter: invert(14%) sepia(33%) saturate(2529%) hue-rotate(266deg) brightness(96%) contrast(103%) !important;
+}
+
+.anchor:before {
+	content: '';
+	display: block;
+	position: relative;
+	width: 0;
+	height: 0.1em;
+}
+
+.daymode {
+	filter: invert(0%);
+	-webkit-filter: invert(0%);
+	hue-rotate(0deg);
+	background-color: white;
+}
+
+
+.nightmode {
+	filter: invert(100%);
+	-webkit-filter: invert(100%);
+	hue-rotate(0deg);
+	background-color: black;
+}

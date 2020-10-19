@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<title>mika.sh – Michał Mika</title>
+	<link id="main-css" rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="images/favicon.ico">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<script src="scripts/nightMode.js"></script>	
+	<script src="scripts/toggleMenu.js"></script>	
+	<script src="scripts/navScroll.js"></script>	
+	<script src="scripts/updateYear.js"></script>	
+</head>
+<body onload="initNightMode()">
+
+<header>
+	<div class="header-left">
+		<img class="invert" src="images/favicon.svg" alt="favicon" />
+		<span class="title">mika @ </span>
+		<span class="subtitle"><a href="https://www.ibnm.uni-hannover.de/de/schillinger/">schillinger's lab</a></span>
+	</div>
+	<nav>
+		<ul id="header-links">
+			<li><a rel="noopener noreferrer" href="assets/cv.pdf">resumé</a></li>
+			<li><a rel="noopener noreferrer" href="#about">about</a></li>
+			<li><a rel="noopener noreferrer" href="https://www.ibnm.uni-hannover.de/de/mika/">ibnm</a></li>
+			<li><a rel="noopener noreferrer" href="#imprint">imprint</a></li>
+		</ul>
+		<span id="nightmode-icon" class="material-icons" onclick="toggleNightMode()">invert_colors</span>
+		<span id="menu-icon" class="material-icons" onclick="togglemenu()">menu</span>
+	</nav>
+</header>
+<div id="menu">
+	<ul>
+		<li><a rel="noopener noreferrer" href="assets/cv.pdf">resumé</a></li>
+		<li><a rel="noopener noreferrer" href="#about">about</a></li>
+		<li><a rel="noopener noreferrer" href="https://www.ibnm.uni-hannover.de/de/mika/">ibnm</a></li>
+		<li><a rel="noopener noreferrer" href="#imprint">imprint</a></li>
+	</ul>
+</div>
+
+<main>
+	<section class="person">
+		<div id="overview">
+			<img id="profile" class="non-invert" src="images/mika.jpg" alt="profile image" />
+			<h1>Michał Mika, M.Sc.</h1>
+			<p>Ph.D. candidate, Computational methods for cavitating flows</p>
+			<div id="social-icons">
+				<a target="_blank" rel="noopener noreferrer" href="https://www.researchgate.net/profile/Michal_Mika3"><img class="rg-filter" src="simpleicons/researchgate.svg" alt="researchgate" /></a>
+				<a rel="noopener noreferrer" href="mailto:ydL7N734vsoNV@mika.sh"><img class="gmail-filter" src="simpleicons/gmail.svg" alt="mail" /></a>
+				<a rel="noopener noreferrer" href="https://github.com/m1ka05"><img class="github-filter" src="simpleicons/github.svg" alt="github" /></a>
+				<a rel="noopener noreferrer" href="slack://U01ADNAASLQ"><img class="slack-filter" src="simpleicons/slack.svg" alt="slack" /></a>
+				                                                    
+			</div>                                                      
+			<div id="personalfooter">
+				<hr />
+				<a href="assets/mika-ssh.pub" title="4096 SHA256:ptzKB0sTJBpOpOjin7uIvZSDFF7z3uR9W7TFq6izdz8 Michał Mika <michal@mika.sh> (RSA)">ptzKB0sT...</a> (ssh) &ndash;
+				<a href="assets/mika-public.pgp" title="EECB 77A8 5F83 E167 4200  21A7 D83C 8559 7476 7FD2">0x74767FD2</a> (pgp)<br />
+				icons by <a href="https://simpleicons.org">simple icons</a>
+			</div>
+		</div>
+		<div id="highlights">
+			<h2>Education</h2>
+			<ul style="list-style-type: none">
+				<li><span class="material-icons">school</span> M.Sc. Computational Methods in Engineering, Leibniz Universität Hannover</li>
+				<li><span class="material-icons">school</span> B.Sc. Computergestützte Ingenieur<wbr>wissenschaften, Leibniz Universität Hannover</li>
+			</ul>
+			<h2>Research interests</h2>
+			<p>isogeometric analysis, efficient numerical methods, software development</p>
+		</div>
+	</section>
+	<section id="about" class="anchor">
+		<h2 >About</h2>
+		<p>I've studied computational engineering science and 
+		I'm currently a Ph.D. student at the
+		<a target="_blank" rel="noopener noreferrer" href="https://ibnm.uni-hannover.de/">
+		Institute of Mechanics and Computational Mechanics</a>,
+		<a target="_blank" rel="noopener noreferrer" href="https://uni-hannover.de/">
+		Leibniz University Hannover</a>, where I work on efficient isogeometric
+		methods with application to cavitation problems.
+		Here I host my projects and student works.
+		If you've found any mistakes, have questions or suggestions,
+		please let me know at <a href="mailto:ydL7N734vsoNV@mika.sh">ydL7N734vsoNV@mika.sh</a>.</p>
+	</section>
+	<section>
+		<h2>Publications</h2>
+		<h3>Matrix-free isogeometric Galerkin method for Karhunen-Loève
+		approximation of random fields using tensor product splines, tensor
+		contraction and interpolation based quadrature</h3>
+		<p>July 6th, 2020;
+		<a class="button-link" target="_blank" rel="noopener noreferrer" href="assets/ibq_galerkin_kle__mika_2020-preprint.pdf">PDF</a><wbr>
+		<a class="button-link" target="_blank" rel="noopener noreferrer" href="https://github.com/m1ka05/tensiga">code</a><wbr>
+		<a class="button-link" target="_blank" rel="noopener noreferrer" href="https://mika.sh/assets/20200804-IBQ-Mika.pdf">slides</a><wbr>
+		</p>
+		<p>The Karhunen-Loève series expansion decomposes a Gaussian stochastic process 
+		into an infinite series of pairwise uncorrelated random variables and pairwise
+		L2 orthogonal functions. The computational complexity of standard Galerkin finite
+		element formation and assembly techniques, as well as memory requirements of
+		direct solution techniques become quickly computationally intractable with
+		increasing polynomial degree and the number of elements. In this work we
+		present a novel matrix-free solution strategy that scales optimally with
+		the problem size, is indepedent of the polynomial degree and is emberassingly
+		parallel. A high-order three-dimensional benchmark
+		illustrates exceptional computational performance combined with high
+		accuracy and robustness.</p>
+		<p class="gallery">
+		<a href="images/20200706_img2.png"><img src="images/20200706_img2.png" alt="thumbnail0" /></a>
+		<a href="vtkjs.html?fileURL=assets/20201018-ibq-shell.vtkjs"><img src="images/20200706_img0.png" alt="thumbnail1" /></a>
+		<a href="images/20200706_img3.png"><img src="images/20200706_img3.png" alt="thumbnail2" /></a>
+		<a href="images/20200706_img1.png"><img src="images/20200706_img1.png" alt="thumbnail3" /></a>
+		</p>
+	</section>
+	<section>
+		<h2>Student projects</h2>
+		<h3>Electrostatic sensor modeling for torque measurements</h3>
+		<p class="meta">September 21st, 2017;
+		<a class="button-link" target="_blank" rel="noopener noreferrer" href="assets/electrostatic_sensor_modeling__mika_2017.pdf">pdf</a><wbr>
+		<a class="button-link" target="_blank" rel="noopener noreferrer" href="https://www.adv-radio-sci.net/15/55/2017/">pub</a><wbr>
+		</p>
+		<p class="summary">Based on a simple draft of an exemplary measurement setup,
+		this paper discusses the general idea behind an electrostatic
+		capacitive torque sensor. For better understanding of the working
+		principle of the sensor the electrostatics, the geometry and the mechanics of
+		the considered measurement setup are modeled.</p>
+
+		<h3>Visualization of finite element analysis results on 3D printed models</h3>
+		<p class="meta">April 14th, 2017;
+		<a class="button-link" target="_blank" rel="noopener noreferrer" href="assets/projektarbeit_3d_druck_poster__mika.pdf">pdf</a><wbr>
+		</p>
+		<p class="summary">This project explores the
+		possibilities of visualization of finite element analysis results using
+		3D printed models. By outer-surface extraction and implementation of a
+		VRML interface the interpolated datasets are prepared for a 3D print.</p>
+		<p class="gallery">
+		<a href="images/20170414_img0.png"><img style="height:7em" src="images/20170414_img0.png" alt="thumbnail0" /></a>
+		<a href="images/20170414_img1.png"><img style="height:7em" src="images/20170414_img1.png" alt="thumbnail1" /></a>
+		<a href="images/20170414_img2.png"><img style="height:7em" src="images/20170414_img2.png" alt="thumbnail2" /></a>
+		</p>
+	</section>
+</main>
+
+<footer>
+	<h2>Privacy</h2>
+	<p>Except for access logs containing the access time, the ip address and browser
+	information, no other user data is being collected. The collected data
+	is disposed every two weeks and is used only to maintain the server
+	and track down possible problems, if any errors occur.</p>
+
+	<h2>Licensing</h2>
+	<p>Except where otherwise noted, the content of this website is licensed
+	under a
+	<a target="_blank" rel="noopener noreferrer" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+	Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+
+	<h2 id="imprint">Imprint</h2>
+	<p><i>(A note on some formalities required by German law)</i> Diese Seite
+	dient nur persönlichen und nicht-kommerziellen Zwecken und ist nach <i>
+	§ 55 Informationspflichten und Informationsrechte</i> des
+	<a target="_blank" rel="noopener noreferrer" href="http://www.voris.niedersachsen.de/jportal/?quelle=jlink&query=RdFunkStVtr+ND+%C2%A7+55&psml=bsvorisprod.psml&max=true">Staatsvertrages für Rundfunk und Telemedien</a> von der Impressumspflicht ausgenommen.
+	Die Inhalte stellen kein journalistisch-redaktionell gestaltetes Angebot dar
+	und zielen weder einer öffentlichen Meinungsbildung noch einer Werbung ab.</p>
+
+	<p>Michał Mika, M.Sc.<br />
+	Institute of Mechanics and Computational Mechanics<br />
+	Appelstraße 9a, 30167 Hannover<br />
+	Tel. +49 511 762-3219<br />
+	mika{ad}ibnm.uni-hannover.de</p>
+
+	<p>Copyright &copy; <span id="curr-year">2021</span>
+	Michał Mika. For licensing see the licensing section on the main page.</p>
+	<p><script>document.write('<i>Last Modified:</i> '+
+	  document.lastModified)</script></p>
+</footer>
+
+</body>
+</html>
+
